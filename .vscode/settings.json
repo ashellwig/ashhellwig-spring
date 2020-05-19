@@ -1,0 +1,10 @@
+{
+  "[java]": {
+    "editor.formatOnSave": true
+  },
+  "[xml]": {
+    "editor.formatOnSave": true
+  },
+  "java.home": "/usr/lib/jvm/java-14-jdk",
+  "spring-boot.ls.logfile": "${workspaceFolder}/ashhellwig-spring.log"
+}

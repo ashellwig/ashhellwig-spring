@@ -1,10 +1,68 @@
 {
-  "[java]": {
-    "editor.formatOnSave": true
+  /* Programming Languages */
+  // YAML
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.autoIndent": "none",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "yaml.validate": true,
+  "yaml.hover": true,
+  /// Completion
+  "yaml.completion": true,
+  /// Formatting
+  "yaml.format.enable": true,
+  "yaml.format.singleQuote": true,
+  "yaml.format.printWidth": 80,
+  "yaml.format.bracketSpacing": true,
+  "yaml.format.proseWrap": "preserve",
+  // XML
   "[xml]": {
-    "editor.formatOnSave": true
+    "editor.autoClosingBrackets": "never",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  /// Formatting
+  "xml.format.enabled": true,
+  // Java
+  "[java]": {
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+      100
+      120
+    ]
   },
   "java.home": "/usr/lib/jvm/java-14-jdk",
-  "spring-boot.ls.logfile": "${workspaceFolder}/ashhellwig-spring.log"
+  "java.autobuild.enabled": true,
+  /// Completion
+  "java.completion.enabled": true,
+  /// Formatting
+  "java.format.enabled": true,
+  "java.format.comments.enabled": true,
+  "java.format.settings.profile": "GoogleStyle",
+  /// Linting
+  "sonarlint.disableTelemetry": true,
+  "sonarlint.ls.javaHome": "/usr/lib/jvm/java-14-jdk",
+  /// Maven
+  "maven.executable.preferMavenWrapper": true,
+  "maven.terminal.useJavaHome": true,
+  /// Spring
+  "spring.initializr.defaultPackaging": "JAR",
+  "spring.initializr.defaultGroupId": "com.ashhellwig",
+  "spring-boot.ls.logfile": "${workspaceFolder}/ashhellwig-spring.log",
+  /* Global */
+  // Files
+  "files.associations": {
+    "/mvnw/": "shellscript",
+    "/mvnw*": "shellscript"
+  },
+  // Spell Checker
+  "cSpell.enabled": false
 }

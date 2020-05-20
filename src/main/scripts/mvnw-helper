@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# For maven wrapper:
+if [ -x "$PWD/mvnw" ]; then
+    ./mvnw 'clean' 'spring-boot:run'
+else
+    mvn 'clean' 'spring-boot:run'
+fi

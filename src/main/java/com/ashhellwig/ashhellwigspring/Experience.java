@@ -8,22 +8,29 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-class Experience {
+public class Experience {
     private @Id @GeneratedValue Long id;
-    private String company;
+    private String companyName;
     private String jobTitle;
     private String startDate;
     private String endDate;
+    private String jobSummary;
     private String description;
+    private String skillsRequired;
+    private String detailedAchievements;
 
     Experience() {
     }
 
-    Experience(String company, String jobTitle, String startDate, String endDate, String description) {
-        this.company = company;
+    Experience(String companyName, String jobTitle, String startDate, String endDate, String jobSummary,
+            String description, String skillsRequired, String detailedAchievements) {
+        this.companyName = companyName;
         this.jobTitle = jobTitle;
         this.startDate = startDate;
         this.endDate = endDate;
+        this.jobSummary = jobSummary;
         this.description = description;
+        this.skillsRequired = skillsRequired;
+        this.detailedAchievements = detailedAchievements;
     }
 }

@@ -1,0 +1,13 @@
+language: java
+jdk:
+  - openjdk14
+os: linux
+
+before_script:
+  - unset _JAVA_OPTIONS
+  - export PATH="` pwd` /bin:$PATH"
+  - echo $HOME
+  - echo $JAVA_OPTS
+  - echo $MAVEN_OPTS
+
+script: ./mvnw test
